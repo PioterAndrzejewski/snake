@@ -7,6 +7,7 @@ UP = 90
 RIGHT = 0
 DOWN = 270
 LEFT = 180
+=======
 
 
 class Snake:
@@ -38,6 +39,7 @@ class Snake:
     def move_left(self):
         if not self.segments[0].heading() == RIGHT:
             self.segments[0].setheading(LEFT)
+
 
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
